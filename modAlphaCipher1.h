@@ -11,7 +11,7 @@ using namespace std;
 class modAlphaCipher
 {
 private:
-    string numAlpha = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"; //алфавит по порядку
+    string numAlpha = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
     map <char,int> alphaNum; //ассоциативный массив "номер по символу"
     vector <int> key; //ключ
     vector<int> convert(const string& s); //преобразование строка-вектор
