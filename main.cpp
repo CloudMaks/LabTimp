@@ -49,6 +49,6 @@ int main(int argc, char **argv)
 
             }
         }
-    } while (op!=0);
+    } while (op != 0);
     return 0;
 }
