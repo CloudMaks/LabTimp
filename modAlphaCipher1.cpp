@@ -5,7 +5,8 @@ modAlphaCipher::modAlphaCipher(const string& skey)
     locale loc("ru_RU.UTF-8"); // русская локаль для корректной смены регистра
     wstring_convert<codecvt_utf8<wchar_t>, wchar_t> codec; //кодек UTF-8
     wstring ws = codec.from_bytes(numAlpha); // перекодируем
-    for (unsigned i = 0; i < ws.size(); i++) {
+    for (unsigned i = 0; i < ws.size(); i++) 
+    {
         alphaNum[ws[i]]=i;
     }
     key = convert(skey);
@@ -14,7 +15,8 @@ modAlphaCipher::modAlphaCipher(const string& skey)
 string modAlphaCipher::encrypt(const string& open_text)
 {
    vector<int> work = convert(open_text);
-    for(unsigned i = 0; i < work.size(); i++) {
+    for(unsigned i = 0; i < work.size(); i++) 
+    {
         work[i] = (work[i] + key[i % key.size()]) % alphaNum.size();
     }
     return convert(work);
