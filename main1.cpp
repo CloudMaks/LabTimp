@@ -45,7 +45,7 @@ int main(int argc, char **argv)
                 }
             } else 
             {
-                cout<<"Operation aborted: invalid text\n";
+                cout << "Operation aborted: invalid text\n";
 
             }
         }
