@@ -35,13 +35,15 @@ int main(int argc, char **argv)
         if (op > 2) {
             cout<<"Illegal operation\n";
         } else if (op > 0) {
-            cout<<"Cipher ready. Input text: ";
-            cin>>text;
-            if (isValid(text)) {
-                if (op == 1) {
+            cout << "Cipher ready. Input text: ";
+            cin >> text;
+            if (isValid(text)) 
+            {
+                if (op == 1) 
+                {
                     cout << "Encrypted text: "<<cipher.encrypt(text)<<endl;
                 } else {
-                    cout<<"Decrypted text: "<<cipher.decrypt(text)<<endl;
+                    cout << "Decrypted text: "<<cipher.decrypt(text)<<endl;
                 }
             } else 
             {
