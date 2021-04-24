@@ -3,7 +3,7 @@
 bool isValid(const string& s)
 {
     for(const auto &c:s) // цикл проходит по всему массиву и выдает сам объект этого массива
-        if (!isalpha(c) )
+        if (!isalpha(c) ) //проверяет аргумент, является ли он строчной или прописной буквой алфавита
             return false;
     return true;
     
