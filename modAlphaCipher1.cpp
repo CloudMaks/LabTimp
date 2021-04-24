@@ -1,4 +1,4 @@
-#include "modAlphaCipher1.h"
+#include "modAlphaCipher.h"
 
 modAlphaCipher::modAlphaCipher(const string& skey)
 {
